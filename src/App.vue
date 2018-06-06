@@ -4,12 +4,13 @@
   <div>
     <!-- <img src="./assets/logo.png"> -->
 
+    <!-- MENU LATERAL -->
     <menu-ouistigo></menu-ouistigo>
 
-    <div class="main-panel">
+    <div class="main-panel principal">
       <header-ouistigo></header-ouistigo>
 
-      <div class="content">
+      <div class="content contenu">
         <div class="container-fluid">
 
           <transition name="test" enter-active-class="animated fadeIn">
@@ -19,6 +20,7 @@
         </div>
       </div>
 
+      <!-- PIED DE PAGE -->
       <footer-ouistigo></footer-ouistigo>
 
     </div>
@@ -53,4 +55,19 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
+
+/* CES 2 CLASSES PERMETTENT FIXER LE FOOTER EN BAS GRACE A FLEXBOX */
+.principal {
+  display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.contenu {
+  flex: 1;
+}
+
+
 </style>

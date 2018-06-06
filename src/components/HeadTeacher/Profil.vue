@@ -96,7 +96,33 @@
         <!-- FIN -->
 
 
+
+
+        <!-- INSTRUCTIONS -->
+        <div class="col-md-5">
+          <div class="card">
+            <div class="header">
+              <h4 class="title">Instructions</h4>
+            </div>
+            <div class="content">
+              <div>Pour ENREGISTRER vos modifications, cliquez sur le bouton suivant :
+              </div>
+              <div>
+              </div>
+              <button type="submit" class="btn btn-info btn-fill pull-right">Enregistrer</button>
+              <div class="clearfix"></div>
+            </div>
+
+          </div>
+        </div>
+        <!-- FIN -->
+
       </div>
+
+
+
+
+
 
 </template>
 

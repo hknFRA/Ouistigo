@@ -10,7 +10,7 @@
         <div class="row">
           <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
             <router-link :to="{ name: 'Accueil', params: {} }" class="simple-text">Ouistigo</router-link>
-          
+
         </div>
       </div>
 
@@ -31,7 +31,7 @@
           <router-link :to="{ name: 'Profil', params: {} }" class="pe-7s-news-paper">Mon Profil</router-link>
         </li>
 
-        <li class="active-pro">
+        <li class="active-pro text-center">
           <router-link :to="{ name: 'Utilisateurs', params: {} }" class="pe-7s-rocket">SE DECONNECTER</router-link>
         </li>
 
