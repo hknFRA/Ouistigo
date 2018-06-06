@@ -2,9 +2,14 @@
 
       <div class="row">
 
+        <div class="col-md-7">
+
+
+
+
 
         <!-- IDENTIFIANT ET MOT DE PASSE -->
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div class="card">
             <div class="header">
               <h4 class="title">👨‍💻 Identifiant / Mot de Passe</h4>
@@ -12,7 +17,7 @@
             <div class="content">
               <form>
                 <div class="row">
-                  <div class="col-md-5">
+                  <div class="col-md-8">
                     <div class="form-group">
                       <label>Identifiant d'application (non modifiable)</label>
                       <input type="text" class="form-control" disabled placeholder="Company" value="7YYZGZ">
@@ -22,7 +27,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-md-8">
                     <div class="form-group">
                       <label>Identifiant de connexion</label>
                       <input type="text" class="form-control" placeholder="Username" value="jbenzakki">
@@ -31,7 +36,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-md-8">
                     <div class="form-group">
                       <label>Mot de Passe</label>
                       <input type="text" class="form-control" placeholder="Username" value="123456">
@@ -39,8 +44,6 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-info btn-fill pull-right">Enregistrer</button>
-                <div class="clearfix"></div>
               </form>
             </div>
           </div>
@@ -49,7 +52,7 @@
 
 
         <!-- INFORMATIONS PERSONNELLES -->
-        <div class="col-md-8">
+        <div class="col-md-12">
           <div class="card">
             <div class="header">
               <h4 class="title">👩‍🎓 Informations Personnelles</h4>
@@ -87,8 +90,6 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-info btn-fill pull-right">Enregistrer</button>
-                <div class="clearfix"></div>
               </form>
             </div>
           </div>
@@ -96,6 +97,8 @@
         <!-- FIN -->
 
 
+
+</div>
 
 
         <!-- INSTRUCTIONS -->

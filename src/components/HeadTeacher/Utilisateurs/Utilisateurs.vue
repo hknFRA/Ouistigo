@@ -9,7 +9,7 @@
     <!-- BOUTON POUR CREER UN NOUVEL UTILISATEUR -->
     <div class="col-md-12">
 
-        <router-link :to="{ name: 'UtilisateursCreer', params: {} }" tag="button" class="card" id="test">🙋‍♂️ Créer un nouvel utilisateur</router-link>
+        <router-link :to="{ name: 'UtilisateursCreer', params: {} }" tag="button" class="card center-block" id="test">🙋‍♂️ Créer un nouvel utilisateur</router-link>
 
     </div>
 

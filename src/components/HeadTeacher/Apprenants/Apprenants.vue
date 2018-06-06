@@ -28,7 +28,7 @@
                 <td> {{value.email}} </td>
                 <td> {{value.phone}} </td>
                 <td> {{value.website}} </td>
-                <router-link :to="{ name: 'ApprenantConsultation', params: {id: value.id} }" tag="button">Plus d'informations</router-link>
+                <td><router-link :to="{ name: 'ApprenantConsultation', params: {id: value.id} }" tag="button" class="center-block">Plus d'informations</router-link></td>
               </tr>
 
             </tbody>

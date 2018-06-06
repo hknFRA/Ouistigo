@@ -2,11 +2,13 @@
 
   <div class="row">
 
-    <!-- IDENTIFIANT ET MOT DE PASSE -->
+    <!-- CHAMPS A REMPLIR -->
     <div class="col-md-7">
       <div class="card">
         <div class="content">
           <form>
+
+
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -90,8 +92,6 @@
             </div>
 
 
-            <button type="submit" class="btn btn-info btn-fill pull-right">Enregistrer</button>
-            <div class="clearfix"></div>
           </form>
         </div>
       </div>

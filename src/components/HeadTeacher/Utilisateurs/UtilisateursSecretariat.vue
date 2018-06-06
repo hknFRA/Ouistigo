@@ -29,7 +29,7 @@
                 <td> {{value.email}} </td>
                 <td> {{value.phone}} </td>
                 <td> {{value.website}} </td>
-                <router-link :to="{ name: 'UtilisateurModifier', params: {id: value.id} }" tag="button">Modifier</router-link>
+                <td><router-link :to="{ name: 'UtilisateurModifier', params: {id: value.id} }" tag="button">Modifier</router-link></td>
               </tr>
 
             </tbody>
