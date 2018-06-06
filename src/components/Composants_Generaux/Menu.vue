@@ -7,9 +7,11 @@
 
     <div class="sidebar-wrapper">
       <div class="logo">
-        <a class="simple-text">
-          OUISTIGO
-        </a>
+        <div class="row">
+          <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
+            <router-link :to="{ name: 'Accueil', params: {} }" class="simple-text">Ouistigo</router-link>
+          
+        </div>
       </div>
 
       <ul class="nav">
@@ -43,7 +45,7 @@
 export default {
   data () {
       return {
-        
+
       }
 }
 

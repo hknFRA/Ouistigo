@@ -3,6 +3,9 @@ import Router from 'vue-router'
 
 /*Import de tous les composants*/
 import HelloWorld from '@/components/HelloWorld'
+import Accueil from '@/components/Composants_Generaux/Accueil'
+
+
 
 import Apprenants from '@/components/HeadTeacher/Apprenants/Apprenants'
 import ApprenantConsultation from '@/components/HeadTeacher/Apprenants/ApprenantConsultation'
@@ -28,7 +31,7 @@ import Erreur from '@/components/Composants_Generaux/Erreur'
 
 import Copyrights from '@/components/Composants_Generaux/Copyrights'
 
-import Accueil from '@/components/Composants_Generaux/Accueil'
+
 
 Vue.use(Router)
 
