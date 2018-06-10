@@ -37,7 +37,7 @@
         </li>
 
         <li>
-          <router-link :to="{ name: 'Utilisateurs', params: {} }">
+          <router-link :to="{ name: 'UtilisateursApprenants', params: {} }">
             <i class="pe-7s-users"></i>
             <p>Gérer les Utilisateurs</p>
           </router-link>

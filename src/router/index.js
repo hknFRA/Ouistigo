@@ -28,7 +28,7 @@ export default new Router({
     /*Il y en a forcement une sinon bug*/
     /*Page de Connexion*/
     {
-      	path: '/',
+      	path: '',
       	name : 'Connexion',
     	component : Connexion,
     	      

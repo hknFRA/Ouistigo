@@ -20,7 +20,7 @@
                   <label>Mot de passe</label>
                   <input type="password" class="form-control" placeholder="">
 
-                  <router-link :to="{ name: 'AppHeadTeacher', params: {} }" class="btn btn-danger btn-block" tag="button">Connexion</router-link>
+                  <router-link :to="{ name: 'Accueil', params: {} }" class="btn btn-danger btn-block" tag="button">Connexion</router-link>
 
                 </form>
 
