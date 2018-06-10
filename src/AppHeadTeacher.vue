@@ -2,11 +2,30 @@
 
   <!-- <div id="app"> -->
   <div>
+    <!-- <img src="./assets/logo.png"> -->
 
+    <!-- MENU LATERAL -->
+    <menu-ouistigo></menu-ouistigo>
+
+    <div class="main-panel principal">
+      <header-ouistigo></header-ouistigo>
+
+      <div class="content contenu">
+        <div class="container-fluid">
 
           <transition name="test" enter-active-class="animated fadeIn">
             <router-view></router-view>
           </transition>
+
+        </div>
+      </div>
+
+      <!-- PIED DE PAGE -->
+      <footer-ouistigo></footer-ouistigo>
+
+    </div>
+
+
 
 
   </div>

@@ -25,11 +25,17 @@ import ModulesGerer from '@/components/HeadTeacher/Modules/ModulesGerer'
 
 
 
-import Profil from '@/components/HeadTeacher/Profil'
+import Profil from '@/components/HeadTeacher/Profil/Profil'
 
 import Erreur from '@/components/Composants_Generaux/Erreur'
 
 import Copyrights from '@/components/Composants_Generaux/Copyrights'
+
+import Connexion from '@/components/Composants_Generaux/Connexion' 
+
+import AppHeadTeacher from '@/components/AppHeadTeacher' 
+
+import Deconnexion from '@/components/Composants_Generaux/Deconnexion'
 
 
 
@@ -41,119 +47,147 @@ export default new Router({
     
     /*Route par défaut*/
     /*Il y en a forcement une sinon bug*/
+    /*Page de Connexion*/
     {
       	path: '/',
-      	name : 'Accueil',
-    	component : Accueil
-      
-    },
-
-    /*Route pour la liste de tous les apprenants*/
-    {
-    	path: '/apprenants',
-    	name: 'Apprenants',
-      	component: Apprenants
-    },
-
-    /*Route pour voir le détail d'un seul apprenant*/
-    /*Elle prend en paramètre l'id de l'apprenant sur lequel on a cliqué*/
-    {
-    	path: '/apprenantconsult/:id',
-    	name: 'ApprenantConsultation',
-      	component: ApprenantConsultation
+      	name : 'Connexion',
+    	component : Connexion,
+    	      
     },
 
 
-    /*Route pour la liste de tous les utilisateurs*/
-    {
-    	path: '/utilisateurs',
-    	name: 'Utilisateurs',
-      	component: Utilisateurs,
-      	children: [
-      		/*Consulter les apprenants*/
-      		{
-      		path: '/utilisateurs-apprenants',
-    		name: 'UtilisateursApprenants',
-      		component: UtilisateursApprenants
-      		},
-      		/*Consulter les tuteurs*/
-      		{
-      		path: '/utilisateurs-tuteurs',
-    		name: 'UtilisateursTuteurs',
-      		component: UtilisateursTuteurs
-      		},
-      		/*Consulter le secretariat*/
-      		{
-      		path: '/utilisateurs-secretariat',
-    		name: 'UtilisateursSecretariat',
-      		component: UtilisateursSecretariat
-      		},
-      		/*Consulter le service formation continue*/
-      		{
-      		path: '/utilisateurs-sfc',
-    		name: 'UtilisateursServiceFormationContinue',
-      		component: UtilisateursServiceFormationContinue
-      		},
-      	]
+	{
+    	path: '/appHeadTeacher',
+    	name: 'AppHeadTeacher',
+    	component: AppHeadTeacher,
+    	children : [
+    		{
+    			path: '/accueil',
+    			name: 'Accueil',
+    			component: Accueil
+    		},
+
+    		/*Route pour la liste de tous les apprenants*/
+		    {
+		    	path: '/apprenants',
+		    	name: 'Apprenants',
+		      	component: Apprenants
+		    },	
+
+
+		    /*Route pour voir le détail d'un seul apprenant*/
+		    /*Elle prend en paramètre l'id de l'apprenant sur lequel on a cliqué*/
+		    {
+		    	path: '/apprenantconsult/:id',
+		    	name: 'ApprenantConsultation',
+		      	component: ApprenantConsultation
+		    },
+
+
+
+		    /*Route pour la liste de tous les utilisateurs*/
+		    {
+		    	path: '/utilisateurs',
+		    	name: 'Utilisateurs',
+		      	component: Utilisateurs,
+		      	children: [
+		      		/*Consulter les apprenants*/
+		      		{
+		      		path: '/utilisateurs-apprenants',
+		    		name: 'UtilisateursApprenants',
+		      		component: UtilisateursApprenants
+		      		},
+		      		/*Consulter les tuteurs*/
+		      		{
+		      		path: '/utilisateurs-tuteurs',
+		    		name: 'UtilisateursTuteurs',
+		      		component: UtilisateursTuteurs
+		      		},
+		      		/*Consulter le secretariat*/
+		      		{
+		      		path: '/utilisateurs-secretariat',
+		    		name: 'UtilisateursSecretariat',
+		      		component: UtilisateursSecretariat
+		      		},
+		      		/*Consulter le service formation continue*/
+		      		{
+		      		path: '/utilisateurs-sfc',
+		    		name: 'UtilisateursServiceFormationContinue',
+		      		component: UtilisateursServiceFormationContinue
+		      		},
+		      	]
+		    },
+
+
+		    /*Créer un nouvel utilisateur*/
+		    {
+		      	path: '/utilisateurs-creer',
+		    	name: 'UtilisateursCreer',
+		      	component: UtilisateursCreer
+		    },
+
+			/*Modifier un utilisateur*/
+		    {
+		      	path: '/utilisateurs-modifier/:id',
+		    	name: 'UtilisateurModifier',
+		      	component: UtilisateurModifier
+		    },
+
+
+		    /*Route pour voir le détail d'un seul utilisateur*/
+		    /*Elle prends en paramètre l'id de l'utilisateur sur lequel on a cliqué*/
+		    {
+		    	path: '/utilisateurconsult/:id',
+		    	name: 'UtilisateurConsultation',
+		    	component: UtilisateurConsultation,
+		    },
+
+		    /*Route pour voir les modules*/
+		    {
+		        path: '/modules',
+		        name: 'Modules',
+		        component: Modules,
+		        
+		    },
+
+		    /*Route pour consulter les modules*/
+		    {
+		    	path: '/modules-consulter',
+		    	name: 'ModulesConsulter',
+		    	component: ModulesConsulter,
+		   	},	
+
+		   	/*Route pour gérer les modules*/
+		   	{
+		    	path: '/modules-gerer',
+		    	name: 'ModulesGerer',
+		    	component: ModulesGerer,
+		   	},
+
+		    /*Route pour voir son profil*/
+		    {
+		    	path: '/profil',
+		    	name: 'Profil',
+		      	component: Profil
+		    },
+
+
+
+    	]
     },
-
-    /*Créer un nouvel utilisateur*/
-    {
-      	path: '/utilisateurs-creer',
-    	name: 'UtilisateursCreer',
-      	component: UtilisateursCreer
-    },
-
-	/*Modifier un utilisateur*/
-    {
-      	path: '/utilisateurs-modifier/:id',
-    	name: 'UtilisateurModifier',
-      	component: UtilisateurModifier
-    },
-
-
-    /*Route pour voir le détail d'un seul utilisateur*/
-    /*Elle prends en paramètre l'id de l'utilisateur sur lequel on a cliqué*/
-    {
-    	path: '/utilisateurconsult/:id',
-    	name: 'UtilisateurConsultation',
-    	component: UtilisateurConsultation,
-    },
-
-    /*Route pour voir les modules*/
-    {
-        path: '/modules',
-        name: 'Modules',
-        component: Modules,
-        
-    },
-
-    /*Route pour consulter les modules*/
-    {
-    	path: '/modules-consulter',
-    	name: 'ModulesConsulter',
-    	component: ModulesConsulter,
-   	},	
-
-   	/*Route pour gérer les modules*/
-   	{
-    	path: '/modules-gerer',
-    	name: 'ModulesGerer',
-    	component: ModulesGerer,
-   	},
-
-    /*Route pour voir son profil*/
-    {
-    	path: '/profil',
-    	name: 'Profil',
-      	component: Profil
-    },
-
 
 
     /*Route si l'utilisateur est sur une route non reconnue*/
     {
+    	path: 'deconnexion',
+    	name: 'Deconnexion',
+    	component: Deconnexion
+    },
+
+    /*Route si l'utilisateur est sur une route non reconnue*/
+    {
     	path: '*',
+    	name: 'Erreur',
     	component: Erreur
     }
 

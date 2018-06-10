@@ -2,7 +2,7 @@
 
 
 
-  <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+  <div class="sidebar" data-color="orange" data-image="assets/img/sidebar-5.jpg">
 
     <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
 
@@ -51,7 +51,7 @@
         </li>
 
         <li class="active-pro text-center">
-          <router-link :to="{ name: 'Utilisateurs', params: {} }">
+          <router-link :to="{ name: 'Deconnexion', params: {} }">
             <i class="pe-7s-rocket"></i>
             <p>SE DECONNECTER</p>
           </router-link>

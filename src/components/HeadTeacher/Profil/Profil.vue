@@ -60,19 +60,17 @@
             <div class="content">
               <form>
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-6">
                     <div class="form-group">
                       <label>Prenom</label>
                       <input type="text" class="form-control" placeholder="Company" value="Judith">
                     </div>
                   </div>
-                  <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-6">
                     <div class="form-group">
                       <label>Nom de famille</label>
                       <input type="text" class="form-control" placeholder="Last Name" value="Benzakki">
                     </div>
-                  </div>
                   </div>
                 </div>
 
