@@ -22,7 +22,7 @@ import ModulesGerer from '@/components/HeadTeacher/Modules/ModulesGerer'
 import Profil from '@/components/HeadTeacher/Profil/Profil'
 
 
-import AppHeadTeacher from '@/components/AppHeadTeacher' 
+import AppHeadTeacher from '@/components/HeadTeacher/AppHeadTeacher' 
 
 
 

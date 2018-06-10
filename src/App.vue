@@ -13,17 +13,11 @@
 </template>
 
 <script>
-import MenuOuistigo from './components/Composants_Generaux/Menu'
-import HeaderOuistigo from './components/Composants_Generaux/Header'
-import FooterOuistigo from './components/Composants_Generaux/Footer'
-
 
 
 export default {
   components: {
-    MenuOuistigo,
-    HeaderOuistigo,
-    FooterOuistigo
+    
   },
   name: 'App'
 }

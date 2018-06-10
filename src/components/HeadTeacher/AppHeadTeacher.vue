@@ -32,9 +32,9 @@
 </template>
 
 <script>
-import MenuOuistigo from './components/Composants_Generaux/Menu'
-import HeaderOuistigo from './components/Composants_Generaux/Header'
-import FooterOuistigo from './components/Composants_Generaux/Footer'
+import MenuOuistigo from './Menu'
+import HeaderOuistigo from '../Composants_Generaux/Header'
+import FooterOuistigo from '../Composants_Generaux/Footer'
 
 
 
