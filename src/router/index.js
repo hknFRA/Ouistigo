@@ -15,6 +15,7 @@ import Copyrights from '@/components/Composants_Generaux/Copyrights'
 
 
 import routesHeadTeacher from './routesHeadTeacher'
+import routesLearner from './routesLearner'
 
 
 
@@ -24,6 +25,12 @@ Vue.use(Router)
 export default new Router({
   routes: [
     
+
+ 	/*Toutes les routes de HEADTEACHER*/
+	...routesHeadTeacher,
+
+	...routesLearner,
+
     /*Route par défaut*/
     /*Il y en a forcement une sinon bug*/
     /*Page de Connexion*/
@@ -34,12 +41,7 @@ export default new Router({
     	      
     },
 
-
-    /*Toutes les routes de HEADTEACHER*/
-	...routesHeadTeacher,
-
-
-
+   
     /*Route de déconnexion*/
     {
     	path: 'deconnexion',
@@ -52,8 +54,7 @@ export default new Router({
     	path: '*',
     	name: 'Erreur',
     	component: Erreur
-    }
-
+    },
 
   ]
 })

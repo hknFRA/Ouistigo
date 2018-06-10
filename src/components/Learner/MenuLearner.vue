@@ -1,8 +1,6 @@
 <template lang="html">
 
-
-
-  <div class="sidebar" data-color="orange" data-image="assets/img/sidebar-5.jpg">
+  <div class="sidebar" data-color="red" data-image="assets/img/sidebar-5.jpg">
 
     <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
 
@@ -23,28 +21,21 @@
 
       <ul class="nav">
         <li class="active">
-          <router-link :to="{ name: 'Apprenants', params: {} }">
+          <router-link :to="{ name: '', params: {} }">
             <i class="pe-7s-smile"></i>
-            <p>Apprenants</p>
+            <p>Consulter mes notes</p>
           </router-link>
         </li>
 
         <li>
-          <router-link :to="{ name: 'Modules', params: {} }">
+          <router-link :to="{ name: '', params: {} }">
             <i class="pe-7s-note2"></i>
             <p>Modules</p>
           </router-link>
         </li>
 
         <li>
-          <router-link :to="{ name: 'UtilisateursApprenants', params: {} }">
-            <i class="pe-7s-users"></i>
-            <p>Gérer les Utilisateurs</p>
-          </router-link>
-        </li>
-
-        <li>
-          <router-link :to="{ name: 'Profil', params: {} }">
+          <router-link :to="{ name: 'ProfilLearner', params: {} }">
             <i class="pe-7s-user"></i>
             <p>Mon Profil</p>
           </router-link>
@@ -61,17 +52,12 @@
     </div>
   </div>
 
+
+
 </template>
 
 <script>
 export default {
-  data () {
-      return {
-
-      }
-}
-
-
 }
 </script>
 

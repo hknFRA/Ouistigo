@@ -1,6 +1,5 @@
-<template>
+<template lang="html">
 
-  <!-- <div id="app"> -->
   <div>
     <!-- <img src="./assets/logo.png"> -->
 
@@ -27,15 +26,13 @@
 
   </div>
 
-  
 </template>
 
 <script>
-import MenuOuistigo from './MenuHeadTeacher'
+
+import MenuOuistigo from './MenuLearner'
 import HeaderOuistigo from '../Composants_Generaux/Header'
 import FooterOuistigo from '../Composants_Generaux/Footer'
-
-
 
 export default {
   components: {
@@ -45,34 +42,8 @@ export default {
   },
   name: 'App'
 }
+
 </script>
 
-
-<style>
-/* Essayer d'importer une bibliothèque locale pour économiser de la bande passante */
-@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-
-
-/* CES 2 CLASSES PERMETTENT FIXER LE FOOTER EN BAS GRÂCE A FLEXBOX */
-.principal {
-  display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-.contenu {
-  flex: 1;
-}
-
-
+<style lang="css">
 </style>

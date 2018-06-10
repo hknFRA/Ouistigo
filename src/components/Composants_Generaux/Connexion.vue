@@ -1,10 +1,9 @@
 <template lang="html">
   <div class="">
 
-    <div class="wrapper">
+    <div class="wrapper principal">
       <div class="register-background">
-        <div class="filter-black"></div>
-        <div class="container">
+        <div class="container contenu" style="margin-top: 0%">
 
           <!-- RANGEE DU MILIEU -->
           <div class="row">
@@ -20,7 +19,7 @@
                   <label>Mot de passe</label>
                   <input type="password" class="form-control" placeholder="">
 
-                  <router-link :to="{ name: 'Accueil', params: {} }" class="btn btn-danger btn-block" tag="button">Connexion</router-link>
+                  <router-link :to="{ name: 'AppHeadTeacher', params: {} }" class="btn btn-danger btn-block" tag="button">Connexion</router-link>
 
                 </form>
 
@@ -30,14 +29,12 @@
           </div>
         </div>
 
-        <div class="footer register-footer text-center">
-          <h6>&copy; 2018, crée par JB Projet 1</h6>
-        </div>
+
 
       </div>
     </div>
 
-
+<footer-ouistigo></footer-ouistigo>
 
   </div>
 
@@ -46,7 +43,16 @@
 </template>
 
 <script>
+import FooterOuistigo from './Footer'
+
 export default {
+
+  components : {
+    FooterOuistigo,
+  }
+
+
+
 }
 </script>
 
@@ -62,7 +68,16 @@ export default {
   padding: 30px;
 }
 
+/* CES 2 CLASSES PERMETTENT FIXER LE FOOTER EN BAS GRÂCE A FLEXBOX */
+.principal {
+  display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 
+.contenu {
+  flex: 1;
+}
 
 
 
