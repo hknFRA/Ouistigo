@@ -1,6 +1,4 @@
-/*Ce document contient toutes les routes pour HEADTEACHER*/
-
-
+/*Ce document contient toutes les routes pour le responsable pédagogique*/
 import Accueil from '@/components/Composants_Generaux/Accueil'
 
 import Apprenants from '@/components/HeadTeacher/Apprenants/Apprenants'
@@ -21,10 +19,7 @@ import ModulesGerer from '@/components/HeadTeacher/Modules/ModulesGerer'
 
 import Profil from '@/components/HeadTeacher/Profil/Profil'
 
-
 import AppHeadTeacher from '@/components/HeadTeacher/AppHeadTeacher' 
-
-
 
 export default [
 {

@@ -13,10 +13,13 @@ import Erreur from '@/components/Composants_Generaux/Erreur'
 import Copyrights from '@/components/Composants_Generaux/Copyrights'
 
 
-
+/*Imports des routes des diiférents utilisateurs*/
+/**/
 import routesHeadTeacher from './routesHeadTeacher'
 import routesLearner from './routesLearner'
-
+import routesTeacher from './routesTeacher'
+import routesSecretariat from './routesSecretariat'
+import routesFormationUnit from './routesFormationUnit'
 
 
 Vue.use(Router)
@@ -24,12 +27,14 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    
 
- 	/*Toutes les routes de HEADTEACHER*/
+ 	/*Utilisations des routes*/
 	...routesHeadTeacher,
-
 	...routesLearner,
+	...routesTeacher,
+	...routesSecretariat,
+	...routesFormationUnit,
+
 
     /*Route par défaut*/
     /*Il y en a forcement une sinon bug*/
@@ -40,8 +45,7 @@ export default new Router({
     	component : Connexion,
     	      
     },
-
-   
+  
     /*Route de déconnexion*/
     {
     	path: 'deconnexion',
@@ -55,6 +59,6 @@ export default new Router({
     	name: 'Erreur',
     	component: Erreur
     },
-
+    
   ]
 })
