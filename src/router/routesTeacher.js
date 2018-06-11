@@ -11,6 +11,12 @@ export default [
     	component : AppTeacher,
     	children : [
     		{
+    			path: '',
+    			name: 'Accueil',
+    			component: Accueil
+    		},
+    		
+    		{
     			path: '/profil',
     			name: 'ProfilTeacher',
     			component : ProfilTeacher,

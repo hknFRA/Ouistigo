@@ -13,13 +13,16 @@
               <div class="register-card">
                 <h3 class="title">Bonjour !</h3>
                 <form class="register-form">
+
                   <label>Email</label>
-                  <input type="text" class="form-control" placeholder="">
+                  <!-- Liaison avec la variable Identifiant -->
+                  <input v-model="identifiant" type="text" class="form-control" placeholder="ouistigo@evry.fr">
 
+                  <!-- Liaison avec la variable MotDePasse -->
                   <label>Mot de passe</label>
-                  <input type="password" class="form-control" placeholder="">
+                  <input v-model="motDePasse" type="password" class="form-control" placeholder="****">
 
-                  <router-link :to="{ name: 'AppHeadTeacher', params: {} }" class="btn btn-danger btn-block" tag="button">Connexion</router-link>
+                  <router-link v-on:click.native="connexion" :to="{ name: test, params: {} }" class="btn btn-danger btn-block" tag="button">Connexion</router-link>
 
                 </form>
 
@@ -34,7 +37,7 @@
       </div>
     </div>
 
-<footer-ouistigo></footer-ouistigo>
+    <footer-ouistigo></footer-ouistigo>
 
   </div>
 
@@ -43,13 +46,47 @@
 </template>
 
 <script>
+// Gestion de la CONNEXION
+// L'Utilisateur entre son identifiant ainsi que son mot de passe
+// Il clique sur le bouton de connexion
+// Une foction vérifie son statut
+// La variable test prend la route adéquat
+//
+
+
+
+
 import FooterOuistigo from './Footer'
 
 export default {
 
   components : {
     FooterOuistigo,
+  },
+
+  data () {
+    return {
+      test : '',
+      mdentifiant : '',
+      motDePasse : '',
+    }
+  },
+
+  methods : {
+    connexion () {
+      if(this.identifiant != "" && this.motDePasse != "") {
+        this.test = 'AppTeacher';
+      }
+      else {
+        alert("Veuillez entrer un identifiant et/ou un mot de passe");
+      }
+    }
+  },
+
+  mounted () {
+    console.log(MotDePasse);
   }
+
 
 
 
@@ -71,14 +108,12 @@ export default {
 /* CES 2 CLASSES PERMETTENT FIXER LE FOOTER EN BAS GRÂCE A FLEXBOX */
 .principal {
   display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .contenu {
   flex: 1;
 }
-
-
 
 </style>
