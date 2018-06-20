@@ -1,6 +1,6 @@
 <template lang="html">
 
-  <div class="sidebar" data-color="red" data-image="assets/img/sidebar-5.jpg">
+  <div class="sidebar" data-color="green" data-image="assets/img/sidebar-5.jpg">
 
     <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
 
@@ -12,7 +12,7 @@
           <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
           </div>
           <div class="col-md-9">
-            <router-link :to="{ name: 'Accueil', params: {} }" class="simple-text">
+            <router-link :to="{ name: 'AccueilSFC', params: {} }" class="simple-text">
               <p>Ouistigo</p>
             </router-link>
           </div>

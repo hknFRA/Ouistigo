@@ -1,6 +1,6 @@
 <template lang="html">
 
-  <div class="sidebar" data-color="red" data-image="assets/img/sidebar-5.jpg">
+  <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
 
     <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
 
@@ -20,26 +20,29 @@
       </div>
 
       <ul class="nav">
-        <li class="active">
-          <router-link :to="{ name: '', params: {} }">
-            <i class="pe-7s-smile"></i>
-            <p>Consulter mes notes</p>
-          </router-link>
-        </li>
 
-        <li>
-          <router-link :to="{ name: '', params: {} }">
-            <i class="pe-7s-note2"></i>
-            <p>Modules</p>
+          <router-link :to="{ name: '', params: {} }" active-class="active" tag="li">
+            <a href="#">
+              <i class="pe-7s-smile"></i>
+              <p>Apprenants</p>
+            </a>
           </router-link>
-        </li>
 
-        <li>
-          <router-link :to="{ name: 'ProfilLearner', params: {} }">
-            <i class="pe-7s-user"></i>
-            <p>Mon Profil</p>
+          <router-link :to="{ name: 'DonnerNote', params: {} }" active-class="active" tag="li">
+            <a href="#">
+              <i class="pe-7s-note2"></i>
+              <p>Gérer notes</p>
+            </a>
           </router-link>
-        </li>
+
+
+          <router-link :to="{ name: 'ProfilLearner', params: {} }" active-class="active" tag="li">
+            <a href="#">
+              <i class="pe-7s-user"></i>
+              <p>Mon Profil</p>
+            </a>  
+          </router-link>
+
 
         <li class="active-pro text-center">
           <router-link :to="{ name: 'Deconnexion', params: {} }">

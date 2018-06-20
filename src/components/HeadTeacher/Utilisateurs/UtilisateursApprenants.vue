@@ -18,15 +18,17 @@
               <th>Prénom</th>
               <th>Actif</th>
               <th>Adresse Mail</th>
-              <th></th>
+              <th>Numéro de téléphone</th>
             </thead>
             <tbody>
 
               <!-- DIRECTIVE QUI VA PARCOURIR LE TABLEAU users ET AFFICHER TOUS LES ELEMENTS -->
               <tr v-for="value in users" >
-                <td> {{value.id}} </td>
-                <td> {{value.name}} </td>
-                <td> {{value.email}} </td>
+                <td> {{value.IdUser}} </td>
+                <td> {{value.FirstName}} </td>
+                <td> {{value.Name}} </td>
+                <td> {{value.Statut_connexion}} </td>
+                <td> {{value.Mail_adress}} </td>
                 <td> {{value.phone}} </td>
                 <td> {{value.website}} </td>
                 <td><router-link :to="{ name: 'UtilisateurModifier', params: {id: value.id} }" tag="button">Modifier</router-link></td>
@@ -53,16 +55,21 @@ export default {
 
   data () {
     return {
-      users: [],
+      // INITIALISATION D'UN TABLEAU D'UTILIASTEUR VIDE
+      users:null,
     }
   },
 
   mounted (){
+
     // ON RECUPERE NOTRE OBJET JSON
-    this.$http.get('https://jsonplaceholder.typicode.com/users').then(response =>
+    //https://jsonplaceholder.typicode.com/users
+    this.$http.get('http://localhost:54089/api/Users').then(response =>
       {
-        console.log("sucess");
-        this.users = response.body;
+        console.log(response.data);
+
+        // LE TABLEAU users PREND COMME VALEUR LA REPONSE JSON DE LA REQUETE
+        this.users = response.data;
 
       }, response => {
         console.log("erreur");

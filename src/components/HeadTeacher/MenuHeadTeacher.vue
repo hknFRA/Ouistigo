@@ -22,33 +22,43 @@
       </div>
 
       <ul class="nav">
-        <li class="active">
-          <router-link :to="{ name: 'Apprenants', params: {} }">
-            <i class="pe-7s-smile"></i>
-            <p>Apprenants</p>
-          </router-link>
-        </li>
 
-        <li>
-          <router-link :to="{ name: 'Modules', params: {} }">
-            <i class="pe-7s-note2"></i>
-            <p>Modules</p>
+        <!-- ON DONNE LE TAG "LI" AU ROUTER VIEW -->
+        <!-- QUAND IL EST ACTIF, IL EST EN SURBRILLANCE -->
+          <router-link :to="{ name: 'Apprenants', params: {} }" active-class="active" tag="li">
+            <a href="#">
+              <i class="pe-7s-smile"></i>
+              <p>Apprenants</p>
+          </a>
           </router-link>
-        </li>
 
-        <li>
-          <router-link :to="{ name: 'UtilisateursApprenants', params: {} }">
-            <i class="pe-7s-users"></i>
-            <p>Gérer les Utilisateurs</p>
-          </router-link>
-        </li>
 
-        <li>
-          <router-link :to="{ name: 'Profil', params: {} }">
-            <i class="pe-7s-user"></i>
-            <p>Mon Profil</p>
+
+          <router-link :to="{ name: 'Modules', params: {} }" active-class="active" tag="li">
+            <a href="#">
+              <i class="pe-7s-note2"></i>
+              <p>Modules</p>
+            </a>
           </router-link>
-        </li>
+
+
+
+          <router-link :to="{ name: 'UtilisateursApprenants', params: {} }" active-class="active" tag="li">
+            <a href="#">
+              <i class="pe-7s-users"></i>
+              <p>Gérer les Utilisateurs</p>
+            </a>
+          </router-link>
+
+
+          <router-link :to="{ name: 'Profil', params: {} }" active-class="active" tag="li">
+            <a href="#">
+              <i class="pe-7s-user"></i>
+              <p>Mon Profil</p>
+            </a>
+          </router-link>
+
+
 
         <li class="active-pro text-center">
           <router-link :to="{ name: 'Deconnexion', params: {} }">

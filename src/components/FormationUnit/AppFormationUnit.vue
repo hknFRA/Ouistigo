@@ -30,7 +30,7 @@
 
 <script>
 
-import MenuOuistigo from './MenuLearner'
+import MenuOuistigo from './MenuFormationUnit'
 import HeaderOuistigo from '../Composants_Generaux/Header'
 import FooterOuistigo from '../Composants_Generaux/Footer'
 

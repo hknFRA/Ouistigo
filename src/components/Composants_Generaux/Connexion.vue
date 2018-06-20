@@ -14,7 +14,7 @@
                 <h3 class="title">Bonjour !</h3>
                 <form class="register-form">
 
-                  <label>Email</label>
+                  <label>Identifiant</label>
                   <!-- Liaison avec la variable Identifiant -->
                   <input v-model="identifiant" type="text" class="form-control" placeholder="ouistigo@evry.fr">
 
@@ -75,7 +75,7 @@ export default {
   methods : {
     connexion () {
       if(this.identifiant != "" && this.motDePasse != "") {
-        this.test = 'AppTeacher';
+        this.test = 'AccueilHeadTeacher';
       }
       else {
         alert("Veuillez entrer un identifiant et/ou un mot de passe");
@@ -84,7 +84,6 @@ export default {
   },
 
   mounted () {
-    console.log(MotDePasse);
   }
 
 

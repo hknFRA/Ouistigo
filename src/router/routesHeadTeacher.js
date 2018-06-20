@@ -23,13 +23,13 @@ import AppHeadTeacher from '@/components/HeadTeacher/AppHeadTeacher'
 
 export default [
 {
-    	path: '/appHeadTeacher/',
+    	path: '/app-head-teacher/',
     	name: 'AppHeadTeacher',
     	component: AppHeadTeacher,
     	children : [
     		{
     			path: '',
-    			name: 'Accueil',
+    			name: 'AccueilHeadTeacher',
     			component: Accueil
     		},
 
@@ -103,7 +103,7 @@ export default [
 		    /*Route pour voir le détail d'un seul utilisateur*/
 		    /*Elle prends en paramètre l'id de l'utilisateur sur lequel on a cliqué*/
 		    {
-		    	path: 'utilisateurconsult/:id',
+		    	path: 'utilisateur-consulter/:id',
 		    	name: 'UtilisateurConsultation',
 		    	component: UtilisateurConsultation,
 		    },

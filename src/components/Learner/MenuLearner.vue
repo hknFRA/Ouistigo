@@ -9,7 +9,7 @@
       <div class="logo">
         <div class="row">
           <div class="col-md-3">
-          <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
+            <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
           </div>
           <div class="col-md-9">
             <router-link :to="{ name: 'Accueil', params: {} }" class="simple-text">
@@ -20,26 +20,20 @@
       </div>
 
       <ul class="nav">
-        <li class="active">
-          <router-link :to="{ name: '', params: {} }">
+        <router-link :to="{ name: 'ConsulterNotes', params: {} }" active-class="active" tag="li">
+          <a href="#">
             <i class="pe-7s-smile"></i>
             <p>Consulter mes notes</p>
-          </router-link>
-        </li>
+          </a>
+        </router-link>
 
-        <li>
-          <router-link :to="{ name: '', params: {} }">
-            <i class="pe-7s-note2"></i>
-            <p>Modules</p>
-          </router-link>
-        </li>
 
-        <li>
-          <router-link :to="{ name: 'ProfilLearner', params: {} }">
+        <router-link :to="{ name: 'ProfilLearner', params: {} }" active-class="active" tag="li">
+          <a href="#">
             <i class="pe-7s-user"></i>
             <p>Mon Profil</p>
-          </router-link>
-        </li>
+          </a>
+        </router-link>
 
         <li class="active-pro text-center">
           <router-link :to="{ name: 'Deconnexion', params: {} }">

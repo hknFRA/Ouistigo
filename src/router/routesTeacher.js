@@ -6,18 +6,18 @@ import AppTeacher from '@/components/Teacher/AppTeacher'
 
 export default [
 	{
-    	path: '/AppTeacher/',
+    	path: '/app-teacher/',
     	name: 'AppTeacher',
     	component : AppTeacher,
     	children : [
     		{
     			path: '',
-    			name: 'Accueil',
+    			name: 'AccueilTeacher',
     			component: Accueil
     		},
     		
     		{
-    			path: '/profil',
+    			path: 'profil',
     			name: 'ProfilTeacher',
     			component : ProfilTeacher,
     		},
