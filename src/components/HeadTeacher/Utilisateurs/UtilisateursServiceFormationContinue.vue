@@ -24,10 +24,12 @@
 
               <!-- DIRECTIVE QUI VA PARCOURIR LE TABLEAU users ET AFFICHER TOUS LES ELEMENTS -->
               <tr v-for="value in users" >
-                <td> {{value.id}} </td>
-                <td> {{value.name}} </td>
-                <td> {{value.email}} </td>
-                <td> {{value.phone}} </td>
+                <td> {{value.IdUser}} </td>
+                <td> {{value.Name}} </td>
+                <td> {{value.FirstName}} </td>
+                <td> {{value.Statut_connexion}} </td>
+                <td> {{value.Mail_adress}} </td>
+                <td> {{value.Phone_number}} </td>
                 <td> {{value.website}} </td>
                 <td><router-link :to="{ name: 'UtilisateurModifier', params: {id: value.id} }" tag="button">Modifier</router-link></td>
               </tr>
@@ -59,7 +61,7 @@ export default {
 
   mounted (){
     // ON RECUPERE NOTRE OBJET JSON
-    this.$http.get('https://jsonplaceholder.typicode.com/users').then(response =>
+    this.$http.get('http://localhost:54089/api/Users').then(response =>
       {
         console.log("sucess");
         this.users = response.body;

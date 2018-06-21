@@ -19,7 +19,11 @@ export default [
                 component: Accueil
             },
     		
-
+            {
+                path: 'profil',
+                name: 'ProfilSFC',
+                component: ProfilSFC
+            },
 
 
     	]

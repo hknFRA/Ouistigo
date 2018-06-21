@@ -20,24 +20,17 @@
       </div>
 
       <ul class="nav">
-        <li class="active">
-          <router-link :to="{ name: '', params: {} }">
-            <i class="pe-7s-smile"></i>
-            <p>Consulter mes notes</p>
-          </router-link>
-        </li>
-
-
-
 
           <router-link :to="{ name: 'ProfilSFC', params: {} }" tag="li" active-class="active">
-            <i class="pe-7s-user"></i>
-            <p>Mon Profil</p>
+            <a href="#">
+              <i class="pe-7s-user"></i>
+              <p>Mon Profil</p>
+            </a>
           </router-link>
 
 
         <li class="active-pro text-center">
-          <router-link :to="{ name: 'Deconnexion', params: {} }" tag="li" active-class="active">
+          <router-link :to="{ name: 'Deconnexion', params: {} }">
             <i class="pe-7s-rocket"></i>
             <p>SE DECONNECTER</p>
           </router-link>

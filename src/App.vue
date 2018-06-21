@@ -36,8 +36,6 @@ export default {
   </script>
 
   <style>
-  /* Essayer d'importer une bibliothèque locale pour économiser de la bande passante */
-  @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -47,7 +45,6 @@ export default {
     color: #2c3e50;
     margin-top: 60px;
   }
-
 
 
   /* CES 2 CLASSES PERMETTENT FIXER LE FOOTER EN BAS GRACE A FLEXBOX */
