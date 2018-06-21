@@ -16,7 +16,7 @@ export default [
     	children : [
     		{
     			path: '',
-    			name: 'Accueil',
+    			name: 'AccueilSecretariat',
     			component: Accueil
     		},
     		

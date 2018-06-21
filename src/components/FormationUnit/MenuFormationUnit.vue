@@ -27,22 +27,17 @@
           </router-link>
         </li>
 
-        <li>
-          <router-link :to="{ name: '', params: {} }">
-            <i class="pe-7s-note2"></i>
-            <p>Modules</p>
-          </router-link>
-        </li>
 
-        <li>
-          <router-link :to="{ name: 'ProfilLearner', params: {} }">
+
+
+          <router-link :to="{ name: 'ProfilSFC', params: {} }" tag="li" active-class="active">
             <i class="pe-7s-user"></i>
             <p>Mon Profil</p>
           </router-link>
-        </li>
+
 
         <li class="active-pro text-center">
-          <router-link :to="{ name: 'Deconnexion', params: {} }">
+          <router-link :to="{ name: 'Deconnexion', params: {} }" tag="li" active-class="active">
             <i class="pe-7s-rocket"></i>
             <p>SE DECONNECTER</p>
           </router-link>

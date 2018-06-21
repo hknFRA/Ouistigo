@@ -13,6 +13,12 @@ export default [
     	name: 'AppLearner',
     	component : AppLearner,
     	children : [
+            {
+                path: '',
+                name: 'AccueilLearner',
+                component : Accueil,
+            },
+
     		{
     			path: 'profil',
     			name: 'ProfilLearner',
@@ -25,6 +31,8 @@ export default [
                 component : ConsulterNotes,
             },
             
+            
+
 
 
 

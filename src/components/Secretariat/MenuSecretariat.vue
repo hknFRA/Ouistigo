@@ -12,7 +12,7 @@
           <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
           </div>
           <div class="col-md-9">
-            <router-link :to="{ name: 'Accueil', params: {} }" class="simple-text">
+            <router-link :to="{ name: 'AccueilSecretariat', params: {} }" class="simple-text">
               <p>Ouistigo</p>
             </router-link>
           </div>
@@ -40,7 +40,7 @@
             <a href="#">
               <i class="pe-7s-user"></i>
               <p>Mon Profil</p>
-            </a>  
+            </a>
           </router-link>
 
 

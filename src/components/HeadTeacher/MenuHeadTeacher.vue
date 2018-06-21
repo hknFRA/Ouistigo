@@ -14,7 +14,7 @@
           <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
           </div>
           <div class="col-md-9">
-            <router-link :to="{ name: 'Accueil', params: {} }" class="simple-text">
+            <router-link :to="{ name: 'AccueilHeadTeacher', params: {} }" class="simple-text">
               <p>Ouistigo</p>
             </router-link>
           </div>
