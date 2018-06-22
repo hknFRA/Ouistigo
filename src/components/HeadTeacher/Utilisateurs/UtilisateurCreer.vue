@@ -31,7 +31,7 @@
                 <div class="form-group">
                   <label>Identifiant d'application</label>
                   <label>ATTENTION : cet identifiant ne pourra plus être modifié</label>
-                  <input type="text" class="form-control"  placeholder="" value="7777">
+                  <input type="text" class="form-control"  placeholder="" value="7777" disabled = disabled>
                 </div>
               </div>
             </div>
