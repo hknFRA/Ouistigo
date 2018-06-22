@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 /*Import de tous les composants*/
-import HelloWorld from '@/components/HelloWorld'
 import Accueil from '@/components/Composants_Generaux/Accueil'
 
 
@@ -13,7 +12,8 @@ import Copyrights from '@/components/Composants_Generaux/Copyrights'
 
 
 /*Imports des routes des diiférents utilisateurs*/
-/**/
+/*En ayant plusieurs fichier on évite d'avoir un seul gros fichier index*/
+/*Améliore aussi la maintenance de l'application*/
 import routesHeadTeacher from './routesHeadTeacher'
 import routesLearner from './routesLearner'
 import routesTeacher from './routesTeacher'
@@ -36,6 +36,7 @@ export default new Router({
 
 
     /*Route par défaut*/
+    /*Le path est vide*/
     /*Il y en a forcement une sinon bug*/
     /*Page de Connexion*/
     {

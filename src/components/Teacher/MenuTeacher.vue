@@ -9,7 +9,7 @@
       <div class="logo">
         <div class="row">
           <div class="col-md-3">
-          <img src="./mascotte_f.png" class="img-responsive" alt=""  width="50">
+          <img src="@/assets/mascotte_f.png" class="img-responsive" alt=""  width="50">
           </div>
           <div class="col-md-9">
             <router-link :to="{ name: 'AccueilTeacher', params: {} }" class="simple-text">
