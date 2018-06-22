@@ -49,7 +49,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Mot de Passe</label>
-                  <input type="text" class="form-control" placeholder="" value="123456">
+                  <input type="text" class="form-control" placeholder="" value="123456" v-model="utilisateur.Mdp">
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Nom</label>
-                  <input type="text" class="form-control" placeholder="Username" value="123456" v-model="utilisateur.Nom">
+                  <input type="text" class="form-control" placeholder="Username" value="123456" v-model="utilisateur.Name">
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Prenom</label>
-                  <input type="text" class="form-control" placeholder="Username" value="123456" v-model="utilisateur.Prenom">
+                  <input type="text" class="form-control" placeholder="Username" value="123456" v-model="utilisateur.FirstName">
                 </div>
               </div>
             </div>
@@ -142,6 +142,7 @@ export default {
         Name:"",
         Mail_adress:"",
         Phone_number:"",
+        Mdp:"",
       }
 
 
@@ -163,6 +164,7 @@ export default {
         Name : this.utilisateur.Name ,
         Mail_adress : this.utilisateur.Mail_adress ,
         Phone_number : this.utilisateur.Phone_number ,
+        Mdp : this.utilisateur.Mdp,
       })
       .then(function(data){
         console.log(data);

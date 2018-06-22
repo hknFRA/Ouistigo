@@ -53,7 +53,7 @@ export default {
 
   mounted (){
     // ON RECUPERE NOTRE OBJET JSON
-    this.$http.get('http://localhost:54089/api/Users').then(response =>
+    this.$http.get('http://localhost:54089/api/Users/test?param=apprenant').then(response =>
       {
         console.log("sucess");
         this.users = response.data;

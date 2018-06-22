@@ -21,9 +21,10 @@
 
               <!-- DIRECTIVE QUI VA PARCOURIR LE TABLEAU users ET AFFICHER TOUS LES ELEMENTS -->
               <tr>
-                <td>12</td>
-                <td>Bachir</td>
-                <td>Djafri</td>
+                <tr v-for="value in users" >
+                  <td> {{value.IdUser}} </td>
+                  <td> {{value.Name}} </td>
+                  <td> {{value.FirstName}} </td>
                 <td><input type="radio" name="" value=""></td>
               </tr>
 
@@ -53,20 +54,13 @@
 
               <!-- DIRECTIVE QUI VA PARCOURIR LE TABLEAU users ET AFFICHER TOUS LES ELEMENTS -->
               <tr>
-                <td>12</td>
-                <td>S</td>
-                <td>Sarunyaa</td>
-                <td><input type="checkbox" name="" value=""></td>
-                <td><input type="checkbox" name="" value=""></td>
+                <tr v-for="value in apprenants" >
+                  <td> {{value.IdUser}} </td>
+                  <td> {{value.FirstName}} </td>
+                  <td> {{value.Name}} </td>
+                  <td><input type="checkbox" name="" value=""></td>
+                  <td><input type="checkbox" name="" value=""></td>
               </tr>
-              <tr>
-                <td>12</td>
-                <td>B</td>
-                <td>Kenza</td>
-                <td><input type="checkbox" name="" value=""></td>
-                <td><input type="checkbox" name="" value=""></td>
-              </tr>
-
             </tbody>
           </table>
 
@@ -86,6 +80,40 @@
 
 <script>
 export default {
+  data () {
+    return {
+      users: [],
+    }
+  },
+
+  data () {
+    return {
+      apprenants: [],
+    }
+  },
+
+  mounted (){
+    // ON RECUPERE NOTRE OBJET JSON
+    this.$http.get('http://localhost:54089/api/Users/test?param=tuteur').then(response =>
+      {
+        console.log("sucess");
+        this.users = response.body;
+
+      }, response => {
+        console.log("erreur");
+      }
+    )
+
+    this.$http.get('http://localhost:54089/api/Users/test?param=apprenant').then(response =>
+      {
+        console.log("sucess");
+        this.apprenants = response.body;
+
+      }, response => {
+        console.log("erreur");
+      }
+    )
+  }
 }
 </script>
 

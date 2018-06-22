@@ -14,27 +14,12 @@
           <tbody>
 
             <!-- DIRECTIVE QUI VA PARCOURIR LE TABLEAU users ET AFFICHER TOUS LES ELEMENTS -->
-            <tr>
-              <td>Anglais</td>
-              <td>3</td>
+            <tr v-for="value in modules" >
+              <td> {{value.Wording}} </td>
+              <td>  </td>
               <td><router-link :to="{ name: 'ModulesConsulter', params: {} }" tag="button">Consulter</router-link></td>
               <td><router-link :to="{ name: 'ModulesGerer', params: {} }" tag="button">Gérer</router-link></td>
             </tr>
-
-            <tr>
-              <td>COOL</td>
-              <td>3</td>
-              <td><router-link :to="{ name: '', params: {} }" tag="button">Consulter</router-link></td>
-              <td><router-link :to="{ name: '', params: {} }" tag="button">Gérer</router-link></td>
-            </tr>
-
-            <tr>
-              <td>BADA</td>
-              <td>9</td>
-              <td><router-link :to="{ name: '', params: {} }" tag="button">Consulter</router-link></td>
-              <td><router-link :to="{ name: '', params: {} }" tag="button">Gérer</router-link></td>
-            </tr>
-
 
           </tbody>
         </table>
@@ -69,6 +54,24 @@
 
 <script>
 export default {
+  data () {
+    return {
+      modules: [],
+    }
+  },
+
+  mounted (){
+    // ON RECUPERE NOTRE OBJET JSON
+    this.$http.get('http://localhost:54089/api/Modules').then(response =>
+      {
+        console.log("sucess");
+        this.modules = response.data;
+
+      }, response => {
+        console.log("erreur");
+      }
+    )
+  }
 }
 </script>
 
