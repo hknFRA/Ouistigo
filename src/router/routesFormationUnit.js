@@ -7,9 +7,11 @@ import AppFormationUnit from '@/components/FormationUnit/AppFormationUnit'
 
 
 export default [
-	{
+	
+    /*C'est la route parent*/
+    /*On ne lui donne pas de nom afin de ne pas pouvoir l'utiliser*/
+    {
     	path: '/app-sfc/',
-    	name: 'AppFormationUnit',
     	component : AppFormationUnit,
     	children : [
     		

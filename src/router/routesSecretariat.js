@@ -1,6 +1,6 @@
 /*Ce document contient toutes les routes de tuteur*/
 import Accueil from '@/components/Composants_Generaux/Accueil'
-import ProfilTeacher from '@/components/Teacher/Profil/ProfilTeacher'
+import Profil from '@/components/Secretariat/Profil/Profil'
 
 import AppSecretariat from '@/components/Secretariat/AppSecretariat'
 import DonnerNote from '@/components/Secretariat/DonnerNote/DonnerNote'
@@ -9,9 +9,11 @@ import GererNotes from '@/components/Secretariat/DonnerNote/GererNotes'
 
 
 export default [
-	{
+	
+    /*C'est la route parent*/
+    /*On ne lui donne pas de nom afin de ne pas pouvoir l'utiliser*/    
+    {
     	path: '/app-secretariat/',
-    	name: 'AppSecretariat',
     	component : AppSecretariat,
     	children : [
     		{
@@ -21,9 +23,9 @@ export default [
     		},
     		
     		{
-    			path: '/profil',
-    			name: 'ProfilTeacher',
-    			component : ProfilTeacher,
+    			path: 'profil',
+    			name: 'ProfilSecretariat',
+    			component : Profil,
     		},
 
             {

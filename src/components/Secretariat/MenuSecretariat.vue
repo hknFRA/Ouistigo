@@ -36,7 +36,7 @@
           </router-link>
 
 
-          <router-link :to="{ name: 'ProfilLearner', params: {} }" active-class="active" tag="li">
+          <router-link :to="{ name: 'ProfilSecretariat', params: {} }" active-class="active" tag="li">
             <a href="#">
               <i class="pe-7s-user"></i>
               <p>Mon Profil</p>

@@ -22,9 +22,10 @@ import Profil from '@/components/HeadTeacher/Profil/Profil'
 import AppHeadTeacher from '@/components/HeadTeacher/AppHeadTeacher' 
 
 export default [
-{
+	/*C'est la route parent*/
+	/*On ne lui donne pas de nom afin de ne pas pouvoir l'utiliser*/
+	{
     	path: '/app-head-teacher/',
-    	name: 'AppHeadTeacher',
     	component: AppHeadTeacher,
     	children : [
     		{

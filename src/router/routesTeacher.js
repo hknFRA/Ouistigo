@@ -5,12 +5,14 @@ import ProfilTeacher from '@/components/Teacher/Profil/ProfilTeacher'
 import AppTeacher from '@/components/Teacher/AppTeacher'
 
 export default [
-	{
+	/*C'est la route parent*/
+    /*On ne lui donne pas de nom afin de ne pas pouvoir l'utiliser*/
+    {
     	path: '/app-teacher/',
-    	name: 'AppTeacher',
     	component : AppTeacher,
     	children : [
-    		{
+    		
+            {
     			path: '',
     			name: 'AccueilTeacher',
     			component: Accueil

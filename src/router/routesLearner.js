@@ -8,9 +8,10 @@ import AppLearner from '@/components/Learner/AppLearner'
 
 
 export default [
-	{
+	/*C'est la route parent*/
+    /*On ne lui donne pas de nom afin de ne pas pouvoir l'utiliser*/
+    {
     	path: '/app-learner/',
-    	name: 'AppLearner',
     	component : AppLearner,
     	children : [
             {
