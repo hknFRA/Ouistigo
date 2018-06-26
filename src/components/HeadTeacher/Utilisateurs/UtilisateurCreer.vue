@@ -49,7 +49,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Mot de Passe</label>
-                  <input type="text" class="form-control" placeholder="" value="123456" v-model="utilisateur.Mdp">
+                  <input type="password" class="form-control" placeholder="" value="123456" v-model="utilisateur.Mdp">
                 </div>
               </div>
             </div>
