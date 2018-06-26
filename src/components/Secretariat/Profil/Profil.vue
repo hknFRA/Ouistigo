@@ -39,7 +39,7 @@
                   <div class="col-md-8">
                     <div class="form-group">
                       <label>Mot de Passe</label>
-                      <input type="text" class="form-control" placeholder="Username" value="123456">
+                      <input type="password" class="form-control" placeholder="Username" value="123456">
                     </div>
                   </div>
                 </div>
