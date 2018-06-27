@@ -12,7 +12,6 @@
         <div class="content table-responsive table-full-width">
           <table class="table table-hover table-striped">
             <thead>
-              <th>ID</th>
               <th>Nom</th>
               <th>Prénom</th>
               <th>Inscription</th>
@@ -22,7 +21,6 @@
               <!-- DIRECTIVE QUI VA PARCOURIR LE TABLEAU users ET AFFICHER TOUS LES ELEMENTS -->
               <tr>
                 <tr v-for="value in users" >
-                  <td> {{value.IdUser}} </td>
                   <td> {{value.Name}} </td>
                   <td> {{value.FirstName}} </td>
                 <td><input type="radio" name="" value=""></td>
@@ -44,7 +42,6 @@
         <div class="content table-responsive table-full-width">
           <table class="table table-hover table-striped">
             <thead>
-              <th>ID</th>
               <th>Nom</th>
               <th>Prénom</th>
               <th>Tutorat</th>
@@ -55,7 +52,6 @@
               <!-- DIRECTIVE QUI VA PARCOURIR LE TABLEAU users ET AFFICHER TOUS LES ELEMENTS -->
               <tr>
                 <tr v-for="value in apprenants" >
-                  <td> {{value.IdUser}} </td>
                   <td> {{value.FirstName}} </td>
                   <td> {{value.Name}} </td>
                   <td><input type="checkbox" name="" value=""></td>
