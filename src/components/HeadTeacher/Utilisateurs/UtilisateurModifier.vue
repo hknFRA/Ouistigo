@@ -128,7 +128,7 @@ export default {
   mounted ()
   {
     // ON RECUPERE NOTRE OBJET JSON
-    this.$http.get('https://jsonplaceholder.typicode.com/users/'+this.$route.params.id).then(response =>
+    this.$http.get('http://localhost:54089/api/Users/getuser?id='+this.$route.params.id).then(response =>
       {
         console.log("sucess");
         console.log("Le numero de l'id est : "+this.$route.params.id);

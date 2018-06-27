@@ -18,7 +18,6 @@
 export default {
 // Nous sommes sur le composant global
 // On déclare dans data() toutes les variables dont on aura besoin dans tout le projet
-
   name: 'App',
 
   components: {

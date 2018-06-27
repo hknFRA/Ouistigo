@@ -9,7 +9,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"> {{nomDeRoute}} </a>
+        <a class="navbar-brand"> Responsable Pédagogique </a>    
+        <!-- <a class="navbar-brand"> {{nomDeRoute}} </a> -->
       </div>
       <div class="collapse navbar-collapse">
 

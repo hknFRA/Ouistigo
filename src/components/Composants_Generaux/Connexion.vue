@@ -67,15 +67,39 @@ export default {
   data () {
     return {
       test : '',
-      mdentifiant : '',
+      identifiant : '',
       motDePasse : '',
+
+      user:[],
     }
   },
 
   methods : {
     connexion () {
       if(this.identifiant != "" && this.motDePasse != "") {
-        this.test = 'AccueilHeadTeacher';
+
+        this.$http.get('http://localhost:54089/api/Users?login='+this.identifiant+'&mdp='+this.motDePasse).then(response =>
+          {
+            console.log(response.data.body);
+
+            // LE TABLEAU user PREND COMME VALEUR LA REPONSE JSON DE LA REQUETE
+            // Il CONTIENT TOUTES LES INFORMATIONS DE L'UTILISATEUR EN TRAIN DE SE CONNECTER
+            this.user = response.data;
+            console.log(this.user);
+
+            // ON MET LES CONDITIONS POUR EFFECTUER LE ROUTAGE
+            if (this.user.Role == "resp_pedago") {
+              this.test = 'AccueilHeadTeacher';
+            }
+            else {
+              console.log("Erreur");
+            }
+
+          }, response => {
+            console.log("erreur");
+          }
+        )
+
       }
       else {
         alert("Veuillez entrer un identifiant et/ou un mot de passe");
