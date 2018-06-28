@@ -78,7 +78,7 @@ export default {
     connexion () {
       if(this.identifiant != "" && this.motDePasse != "") {
 
-        this.$http.get('http://localhost:54089/api/Users?login='+this.identifiant+'&mdp='+this.motDePasse).then(response =>
+        this.$http.get('http://localhost:54089/api/Users/connexion?login='+this.identifiant+'&mdp='+this.motDePasse).then(response =>
           {
             console.log(response.data.body);
 
